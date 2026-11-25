@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenStudy — Study resource organizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+<header><h1>OpenStudy</h1><p>A simple, open-source space to organize your learning resources.</p></header>
+<section class="panel">
+<h2>Add a resource</h2>
+<form id="resource-form">
+<input id="title" placeholder="Resource title" required maxlength="120">
+<input id="url" type="url" placeholder="https://example.com" required>
+<input id="category" placeholder="Subject or category" maxlength="60">
+<button type="submit">Add resource</button>
+</form>
+</section>
+<section class="panel">
+<div class="tools"><h2>Your resources</h2><input id="search" placeholder="Search resources…"></div>
+<div id="resources" aria-live="polite"></div>
+<p id="empty">No resources yet. Add one above to get started.</p>
+</section>
+<footer>OpenStudy • Your resources are stored locally in this browser.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
